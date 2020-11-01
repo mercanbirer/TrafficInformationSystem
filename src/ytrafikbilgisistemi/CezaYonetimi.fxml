@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="1028.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="ytrafikbilgisistemi.CezaYonetimiController">
+     <children>
+        <Label layoutX="40.0" layoutY="27.0" text="CEZA YÖNETİMİ" />
+        <TableView fx:id="tableView" layoutX="28.0" layoutY="67.0" prefHeight="293.0" prefWidth="966.0">
+            <columns>
+                <TableColumn prefWidth="75.0" text="plaka">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="plaka" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="389.0" text="tarih">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="tarih" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="172.0" text="tutar">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="tutar" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="329.0" text="aciklama">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="vergiAciklamasi" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+        <Button layoutX="926.0" layoutY="23.0" mnemonicParsing="false" onAction="#yeniCeza" text="Yeni Ceza" />
+    </children>
+</AnchorPane>

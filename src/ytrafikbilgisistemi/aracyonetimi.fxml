@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="1028.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ytrafikbilgisistemi.AracyonetimiController">
+    <children>
+        <Label layoutX="40.0" layoutY="27.0" text="ARAÇ YÖNETİMİ" />
+        <TableView fx:id="tableView" layoutX="28.0" layoutY="67.0" prefHeight="293.0" prefWidth="966.0">
+            <columns>
+                <TableColumn prefWidth="75.0" text="plaka">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="plaka" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="75.0" text="cinsi">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="plaka" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="75.0" text="markasi">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="markasi" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="75.0" text="ticariAdi">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="ticariAdi" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="75.0" text="tipi">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="tipi" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="75.0" text="modelYili">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="modelYili" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="75.0" text="renk">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="renk" />
+                    </cellValueFactory>
+                </TableColumn>
+            <TableColumn prefWidth="109.0" text="KullanımAmacı" />
+            <TableColumn prefWidth="75.0" text="MotorNo" />
+            <TableColumn prefWidth="75.0" text="ŞaseNo" />
+            <TableColumn prefWidth="105.0" text="TrafğeÇıkısTarihi" />
+            <TableColumn prefWidth="75.0" text="TescilTarihi" />
+            </columns>
+        </TableView>
+        <Button layoutX="873.0" layoutY="23.0" mnemonicParsing="false" onAction="#yeniArac" text="Yeni Araç" />
+    </children>
+</AnchorPane>

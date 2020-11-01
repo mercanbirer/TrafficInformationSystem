@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ytrafikbilgisistemi.CezaKayitController">
+   <children>
+      <Pane layoutX="20.0" layoutY="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="540.0">
+         <children>
+            <Label layoutX="189.0" layoutY="32.0" text="Ceza Kayıt" textFill="#1a0292">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="153.0" layoutY="132.0" text="Plaka:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="154.0" layoutY="182.0" text="Tarih:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="117.0" layoutY="232.0" text="Ceza Tutarı:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="85.0" layoutY="289.0" text="Ceza Açıklaması:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="plaka" layoutX="202.0" layoutY="130.0" prefWidth="150.0" />
+            <DatePicker fx:id="tarih" layoutX="202.0" layoutY="180.0" />
+            <TextField fx:id="tutar" layoutX="203.0" layoutY="230.0" />
+            <TextArea fx:id="aciklama" layoutX="203.0" layoutY="281.0" prefHeight="146.0" prefWidth="195.0" />
+            <Button layoutX="338.0" layoutY="438.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Kaydet"  onAction="#kaydet" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
